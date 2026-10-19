@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capiletras — sua próxima palavra está na mesa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="./"><span class="brand-icon">C</span> capiletras<span class="brand-dot">●</span></a><span class="mode">✦ &nbsp; Oficina de cartas</span></header>
+<main>
+<section class="intro"><div><p class="eyebrow">UM POUCO DE SORTE. MUITA IMAGINAÇÃO.</p><h1>As ideias entram em jogo.</h1><p>Crie suas cartas, coloque na mesa e invente a próxima jogada.</p></div><span class="intro-badge">Feito para<br><strong>jogar junto ↗</strong></span></section>
+<div class="workspace">
+<section class="board-panel" aria-label="Mesa de jogo">
+<div class="panel-heading"><div><span class="live-dot"></span><strong>Sua mesa</strong><span id="count" class="count">0 cartas</span></div><button id="clear" class="text-button">Limpar mesa ↺</button></div>
+<div class="table" id="table"><div class="table-ring"></div><div class="table-mark" id="empty"><span>✳</span><h2>Toda jogada começa<br>com uma ideia.</h2><p>Crie uma carta ao lado para começar.</p></div><div id="cards" class="cards" aria-live="polite"></div><span class="table-label">CAPILETRAS · ESPAÇO PARA CRIAR</span></div>
+<div class="board-footer"><span>↗ &nbsp; Toque em uma carta para virá-la</span><span>Sem pressa. É sua vez.</span></div>
+</section>
+<aside class="creator"><p class="eyebrow">SOLTE A IMAGINAÇÃO</p><h2>Uma carta, mil<br>possibilidades.</h2><p class="muted">Dê uma letra ou uma palavra à sua próxima jogada.</p>
+<form id="create-form"><label for="word">O que vai na carta?</label><input id="word" maxlength="24" placeholder="Ex.: A, capivara, aventura…" required autocomplete="off"><div class="field-footer"><span>Até 24 caracteres</span><span id="length">0/24</span></div><fieldset><legend>Escolha uma cor</legend><div class="swatches"><label class="swatch peach"><input type="radio" name="color" value="peach" checked><span aria-label="Pêssego"></span></label><label class="swatch lavender"><input type="radio" name="color" value="lavender"><span aria-label="Lavanda"></span></label><label class="swatch yellow"><input type="radio" name="color" value="yellow"><span aria-label="Amarelo"></span></label><label class="swatch mint"><input type="radio" name="color" value="mint"><span aria-label="Menta"></span></label></div></fieldset><button class="primary" type="submit">＋ &nbsp; Criar carta</button></form>
+<div class="separator"><span>ou deixe o acaso jogar</span></div><button id="random" class="secondary">⚄ &nbsp; Sortear uma letra</button><p id="status" class="status" role="status">Sua mesa é salva neste navegador.</p></aside>
+</div>
+<section class="how"><span class="how-title">O JOGO É SEU.</span><p><b>01</b> Crie uma carta</p><p><b>02</b> Leve para a mesa</p><p><b>03</b> Invente as regras ✦</p></section>
+</main><footer><span>capiletras © 2026</span><span>Pequenas cartas. Grandes ideias.</span></footer><script src="app.js"></script>
+</body></html>
